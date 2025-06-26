@@ -53,13 +53,18 @@ const memy = [
   "Fotelik samochodowy — najlepszy kompan podróży.",
   "Kiedy fotelik daje poczucie bezpieczeństwa i spokoju.",
   "Dziecko w foteliku: 'To moje miejsce, tutaj jest bezpiecznie!'",
+  "typowy ja ktoremu spadla zabawka a fotelik nie zechcial mnie puscic"
+  
+  
+
 ];
+
 
 export default function MemyZFotelikow() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 via-pink-50 to-blue-100 p-8 md:p-16 font-sans">
       <h1 className="text-4xl font-bold mb-12 text-blue-800 text-center">
-        50 Memów o Fotelikach Samochodowych
+        51 Memów o Fotelikach Samochodowych(dodano wiecej memow)
       </h1>
       <div className="max-w-4xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {memy.map((tekst, i) => (

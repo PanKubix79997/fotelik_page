@@ -54,14 +54,19 @@ export default function Home() {
       {/* Nawigacja */}
       <nav className="mt-12 flex flex-col space-y-4 w-full max-w-md">
         {[
-          { path: '/siedzisz', label: '/siedzisz' },
-          { path: '/lubiefotelik', label: '/lubiefotelik' },
-          { path: '/smieszne-kolo', label: '/smieszne-kolo' },
-          { path: '/ankieta-o-foteliku', label: '/ankieta-o-foteliku' },
-          { path: '/memy', label: '/memy' },
-          { path: '/interaktywny-fotelik', label: '/interaktywny-fotelik' },
+          { path: '/siedzisz', label: 'sprawdz czy siedzisz' },
+          { path: '/lubiefotelik', label: 'przejdz do lubiefotelik' },
+          { path: '/smieszne-kolo', label: 'przejdz do losowania fotelikowych nickow' },
+          { path: '/ankieta-o-foteliku', label: 'przejdz do ankiety' },
+          { path: '/memy', label: 'sprawdz aktualne memy' },
+          { path: '/interaktywny-fotelik', label: 'przejdz do interaktywnego fotelika' },
           { path: '/kurczak', label: '/kurczak' },
-          { path: '/fotelikowy-konkurs', label: '/fotelikowy-konkurs' }, // nowy przycisk
+          { path: '/fotelikowy-konkurs', label: 'sprawdz sie czy wszytko wiesz na temat fotelikow' },
+          { path: '/scrool', label: 'przejdz do scroolowania uwaga bedzie dluuugie i smieszne' },
+          { path: '/smieszne-info', label: 'przejdz do smiesznego infa' },
+          { path: '/cliccer', label: 'sprawdez swoja szybkosc palcow naciskajac na obrazek fotelika tak szybko jak to mozliwe przez 10 sekund' },
+          { path: '/wymagania-sprzetowe', label: 'sprawdz czy twoj pc/telefon da rade obsluzyc te strone jak tak to jakie' },
+          { path: '/fotelikowa-gra', label: 'zagraj w grę' },             
         ].map(({ path, label }) => (
           <Link key={path} href={path}>
             <button className="block bg-pink-400 hover:bg-pink-500 text-white text-center py-3 rounded-lg font-semibold transition w-full">
